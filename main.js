@@ -11,7 +11,6 @@ while (coins>0 && coins<100) {
     let numeroApostado = parseInt(prompt("Elija un número del 1-6"));
     if (Number.isNaN(numeroApostado)) {
         alert("Tienes que terminar el juego😬");
-        continue;
     }
 //LEY
     if (numeroApostado<1 || numeroApostado>6) {
@@ -22,7 +21,6 @@ while (coins>0 && coins<100) {
     let cantidadApostada = parseInt(prompt("Elija la cantidad de monedas que desea apostar"));
     if (Number.isNaN(cantidadApostada)) {
         alert("Tienes que terminar el juego😬");
-        continue;
     }
 //LEY
     if (cantidadApostada > coins || cantidadApostada <= 0) {
@@ -47,4 +45,5 @@ if (coins >= 100) {
     alert("Tu historial de tiradas es el siguiente: " + historial)
 } else {
     alert("💀 Te quedaste sin monedas");
+
 }
